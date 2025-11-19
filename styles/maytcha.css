@@ -1,0 +1,294 @@
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    /* Core matcha palette */
+    --matcha-bg-0: #f7fbf6;
+    /* main canvas – very light */
+    --matcha-bg-1: #e7f3e4;
+    /* muted surfaces / sections */
+    --matcha-bg-2: #d4ebd0;
+    /* cards / headers */
+    --matcha-bg-3: #b7ddb2;
+    /* stronger panels / nav */
+    --matcha-bg-4: #8ec686;
+    /* emphasis / primary matcha */
+
+    --matcha-ink-main: #1f2320;
+    /* main text */
+    --matcha-ink-muted: #4b5c4b;
+    /* muted text */
+
+    /* Supporting hues */
+    --matcha-attention: #caa54a;
+    /* warm yellow-brown, like roasted matcha */
+    --matcha-danger: #df6b6b;
+    /* soft strawberry red */
+    --matcha-done: #9f7bdc;
+    /* soft lavender */
+    --matcha-sponsor: #c765a3;
+    /* muted pink-purple */
+}
+
+
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    /* Canvas / general backgrounds */
+    --bgColor-default: var(--matcha-bg-0);
+    --bgColor-muted: var(--matcha-bg-1);
+    --bgColor-inset: var(--matcha-bg-1);
+    --bgColor-emphasis: var(--matcha-bg-4);
+    --bgColor-inverse: var(--matcha-bg-4);
+    --bgColor-white: var(--matcha-bg-0);
+    --bgColor-black: #111821;
+
+    /* State backgrounds tuned to matcha palette */
+    --bgColor-success-emphasis: #3d9148;
+    --bgColor-success-muted: #d7f4db;
+
+    --bgColor-danger-emphasis: var(--matcha-danger);
+    --bgColor-danger-muted: #ffe7e7;
+
+    --bgColor-attention-emphasis: var(--matcha-attention);
+    --bgColor-attention-muted: #fff4cf;
+
+    --bgColor-neutral-emphasis: #6b7670;
+    --bgColor-neutral-muted: #93a49520;
+
+    --bgColor-severe-emphasis: #b86633;
+    --bgColor-severe-muted: #ffe6d8;
+
+    --bgColor-done-emphasis: var(--matcha-done);
+    --bgColor-done-muted: #f2e9ff;
+
+    --bgColor-closed-emphasis: var(--bgColor-danger-emphasis);
+    --bgColor-closed-muted: var(--bgColor-danger-muted);
+
+    --bgColor-open-muted: var(--bgColor-success-muted);
+    --bgColor-draft-emphasis: var(--bgColor-neutral-emphasis);
+    --bgColor-draft-muted: var(--bgColor-neutral-muted);
+
+    --bgColor-upsell-emphasis: var(--bgColor-done-emphasis);
+    --bgColor-upsell-muted: var(--bgColor-done-muted);
+
+    --bgColor-sponsors-emphasis: var(--matcha-sponsor);
+    --bgColor-sponsors-muted: #ffe9f6;
+
+    --bgColor-disabled: #edf1ec;
+    --bgColor-transparent: #0000;
+
+    /* Header / navbar */
+    --header-bgColor: var(--matcha-bg-3);
+    --header-borderColor-divider: #7aa674;
+    --headerSearch-bgColor: var(--matcha-bg-3);
+    --headerSearch-borderColor: #7aa674;
+
+    --page-header-bgColor: var(--matcha-bg-1);
+    --dashboard-bgColor: var(--matcha-bg-0);
+    --card-bgColor: var(--matcha-bg-0);
+    --timelineBadge-bgColor: var(--matcha-bg-1);
+    --sideNav-bgColor-selected: var(--matcha-bg-2);
+
+    /* Overlays / dropdowns / menus */
+    --overlay-bgColor: var(--matcha-bg-0);
+    --overlay-borderColor: #bdd8b7;
+    --overlay-backdrop-bgColor: rgba(40, 60, 40, 0.35);
+
+    --menu-bgColor-active: var(--matcha-bg-2);
+    --selectMenu-bgColor-active: var(--matcha-bg-2);
+    --reactionButton-selected-bgColor-rest: #dff4dd;
+    --reactionButton-selected-bgColor-hover: #cdeec7;
+
+    /* Tooltip */
+    --tooltip-bgColor: #324939;
+    --tooltip-fgColor: #f8fff6;
+}
+
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    --fgColor-default: var(--matcha-ink-main);
+    --fgColor-muted: var(--matcha-ink-muted);
+    --fgColor-neutral: var(--matcha-ink-muted);
+    --fgColor-black: #1a1f1a;
+    --fgColor-white: #ffffff;
+
+    --fgColor-accent: #3a8f50;
+    /* link color */
+    --fgColor-link: #3a8f50;
+
+    --fgColor-success: #2d7a3c;
+    --fgColor-danger: #c75057;
+    --fgColor-attention: #946b1e;
+    --fgColor-severe: #9f562e;
+    --fgColor-done: var(--matcha-done);
+    --fgColor-sponsors: var(--matcha-sponsor);
+    --fgColor-closed: var(--fgColor-danger);
+    --fgColor-open: var(--fgColor-success);
+    --fgColor-upsell: var(--fgColor-done);
+
+    --fgColor-disabled: #9aa59a;
+    --fgColor-onEmphasis: #ffffff;
+    --fgColor-onInverse: #ffffff;
+
+    /* Selection / highlight */
+    --selection-bgColor: rgba(142, 198, 134, 0.40);
+    --highlight-neutral-bgColor: var(--matcha-bg-2);
+    --codeMirror-selection-bgColor: rgba(74, 166, 95, 0.35);
+
+    --focus-outlineColor: #3a8f50;
+    --focus-outline: 2px solid #3a8f50;
+}
+
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    --borderColor-default: #c3d6bf;
+    --borderColor-muted: #c3d6bfb3;
+    --borderColor-emphasis: #7ba674;
+
+    --borderColor-accent-emphasis: #3a8f50;
+    --borderColor-accent-muted: #8ac79c66;
+
+    --borderColor-success-emphasis: #2f7f42;
+    --borderColor-success-muted: #76c78866;
+
+    --borderColor-danger-emphasis: #c75057;
+    --borderColor-danger-muted: #f2a6ac66;
+
+    --borderColor-attention-emphasis: #b08624;
+    --borderColor-attention-muted: #e4c67066;
+
+    --borderColor-neutral-emphasis: #728271;
+    --borderColor-neutral-muted: var(--borderColor-muted);
+
+    --borderColor-severe-emphasis: #a85a2f;
+    --borderColor-severe-muted: #f1a77366;
+
+    --borderColor-sponsors-emphasis: #b95c9c;
+    --borderColor-sponsors-muted: #f5a5dd66;
+
+    --borderColor-closed-emphasis: var(--borderColor-danger-emphasis);
+    --borderColor-closed-muted: var(--borderColor-danger-muted);
+
+    --borderColor-open-emphasis: var(--borderColor-success-emphasis);
+    --borderColor-open-muted: var(--borderColor-success-muted);
+
+    --borderColor-upsell-emphasis: var(--borderColor-done-emphasis, #9f7bdc);
+    --borderColor-upsell-muted: var(--borderColor-done-muted, #d7c4ff66);
+
+    --borderColor-translucent: rgba(55, 84, 59, 0.32);
+    --borderColor-disabled: #9aa59a33;
+    --borderColor-transparent: #0000;
+
+    /* Shorthand borders (GitHub uses these too) */
+    --border-default: 0.0625rem solid var(--borderColor-default);
+    --border-muted: 0.0625rem solid var(--borderColor-muted);
+    --border-emphasis: 0.0625rem solid var(--borderColor-emphasis);
+
+    --overlay-borderColor: #c4d8c0;
+    --avatar-borderColor: var(--borderColor-translucent);
+}
+
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    --contribution-default-bgColor-0: #edf2ec;
+    --contribution-default-bgColor-1: #c9e4c6;
+    --contribution-default-bgColor-2: #95ce92;
+    --contribution-default-bgColor-3: #5dad65;
+    --contribution-default-bgColor-4: #2f7f42;
+
+    --contribution-default-borderColor-0: #1f23280d;
+    --contribution-default-borderColor-1: var(--contribution-default-borderColor-0);
+    --contribution-default-borderColor-2: var(--contribution-default-borderColor-0);
+    --contribution-default-borderColor-3: var(--contribution-default-borderColor-0);
+    --contribution-default-borderColor-4: var(--contribution-default-borderColor-0);
+
+    /* You can keep the seasonal ones or soften them too if you want */
+    --contribution-winter-bgColor-1: #c9e4ff;
+    --contribution-winter-bgColor-2: #8ac1ff;
+    --contribution-winter-bgColor-3: #3a8fda;
+    --contribution-winter-bgColor-4: #21558f;
+}
+
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    /* Generic gray-ish label (for neutral tags) */
+    --label-gray-bgColor-rest: #e4ede2;
+    --label-gray-bgColor-hover: #d8e4d6;
+    --label-gray-bgColor-active: #c6d6c3;
+    --label-gray-fgColor-rest: #4e5c4e;
+    --label-gray-fgColor-hover: #3f4d3f;
+    --label-gray-fgColor-active: #2f3b2f;
+    --label-gray-borderColor: #0000;
+
+    /* Matcha green label (success / “good”) */
+    --label-green-bgColor-rest: #d7f0d5;
+    --label-green-bgColor-hover: #c2e6be;
+    --label-green-bgColor-active: #a6d59f;
+    --label-green-fgColor-rest: #2d6e38;
+    --label-green-fgColor-hover: #255a30;
+    --label-green-fgColor-active: #1f4a28;
+    --label-green-borderColor: #0000;
+
+    /* Soft red label (danger) */
+    --label-red-bgColor-rest: #ffe3e3;
+    --label-red-bgColor-hover: #ffd0d0;
+    --label-red-bgColor-active: #f9b2b2;
+    --label-red-fgColor-rest: #b0373d;
+    --label-red-fgColor-hover: #952c33;
+    --label-red-fgColor-active: #7b2329;
+    --label-red-borderColor: #0000;
+
+    /* Attention (warn) */
+    --label-yellow-bgColor-rest: #fff2ca;
+    --label-yellow-bgColor-hover: #ffe6a1;
+    --label-yellow-bgColor-active: #ffd478;
+    --label-yellow-fgColor-rest: #84631c;
+    --label-yellow-fgColor-hover: #6f5418;
+    --label-yellow-fgColor-active: #5a4413;
+    --label-yellow-borderColor: #0000;
+
+    /* Done (purple-ish but softer) */
+    --label-purple-bgColor-rest: #f1e8ff;
+    --label-purple-bgColor-hover: #e3d4ff;
+    --label-purple-bgColor-active: #d0b7ff;
+    --label-purple-fgColor-rest: #6f52b5;
+    --label-purple-fgColor-hover: #594091;
+    --label-purple-fgColor-active: #473172;
+    --label-purple-borderColor: #0000;
+}
+
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    --codeMirror-bgColor: var(--matcha-bg-0);
+    --codeMirror-lines-bgColor: var(--matcha-bg-0);
+    --codeMirror-gutters-bgColor: var(--matcha-bg-0);
+    --codeMirror-activeline-bgColor: var(--matcha-bg-1);
+    --codeMirror-gutterMarker-fgColor-default: var(--matcha-bg-0);
+    --codeMirror-lineNumber-fgColor: var(--fgColor-muted);
+
+    --diffBlob-additionLine-bgColor: #ddf5de;
+    --diffBlob-additionLine-fgColor: var(--fgColor-default);
+    --diffBlob-additionNum-bgColor: #c4ebc6;
+    --diffBlob-additionNum-fgColor: var(--fgColor-default);
+    --diffBlob-additionWord-bgColor: #c4ebc6;
+
+    --diffBlob-deletionLine-bgColor: #ffe2e2;
+    --diffBlob-deletionLine-fgColor: var(--fgColor-default);
+    --diffBlob-deletionNum-bgColor: #ffcccc;
+    --diffBlob-deletionNum-fgColor: var(--fgColor-default);
+    --diffBlob-deletionWord-bgColor: #ffcccc;
+
+    --diffBlob-emptyLine-bgColor: var(--bgColor-muted);
+    --diffBlob-emptyNum-bgColor: var(--bgColor-muted);
+
+    --diffBlob-hunkLine-bgColor: var(--matcha-bg-2);
+    --diffBlob-hunkLine-fgColor: var(--fgColor-muted);
+    --diffBlob-hunkNum-bgColor-hover: var(--matcha-bg-3);
+    --diffBlob-hunkNum-fgColor-hover: var(--fgColor-onEmphasis);
+    --diffBlob-hunkNum-fgColor-rest: var(--fgColor-default);
+}

@@ -1,0 +1,43 @@
+{
+    "manifest_version": 3,
+    "name": "gitstyles",
+    "version": "1.0",
+    "description": "A theme picker for GitHub.",
+    "permissions": [
+        "storage"
+    ],
+    "host_permissions": [
+        "https://github.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://github.com/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_start"
+        },
+        {
+            "matches": [
+                "https://github.com/*"
+            ],
+            "js": [
+                "settings.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "styles/maytcha.css",
+                "assets/preview.svg"
+            ],
+            "matches": [
+                "https://github.com/*"
+            ]
+        }
+    ]
+}
