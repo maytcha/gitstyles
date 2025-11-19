@@ -1,13 +1,21 @@
-(function() {
+(function () {
   const THEME_ID = 'gitstyles-theme';
-  const THEME_FILE = 'styles/maytcha.css';
+
 
   function applyTheme(themeName) {
     const existingLink = document.getElementById(THEME_ID);
-    if (themeName === 'maytcha') {
-      if (!existingLink) {
+
+    if (themeName && themeName !== 'default') {
+      const themeFile = `styles/${themeName}.css`;
+
+      if (existingLink) {
+        // If the theme file is different, update it
+        if (!existingLink.href.includes(themeFile)) {
+          existingLink.href = chrome.runtime.getURL(themeFile);
+        }
+      } else {
         const link = document.createElement('link');
-        link.href = chrome.runtime.getURL(THEME_FILE);
+        link.href = chrome.runtime.getURL(themeFile);
         link.type = 'text/css';
         link.rel = 'stylesheet';
         link.id = THEME_ID;

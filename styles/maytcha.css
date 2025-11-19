@@ -292,3 +292,16 @@
     --diffBlob-hunkNum-fgColor-hover: var(--fgColor-onEmphasis);
     --diffBlob-hunkNum-fgColor-rest: var(--fgColor-default);
 }
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    /* Button overrides */
+    --button-default-bgColor-rest: var(--matcha-bg-1);
+    --button-default-bgColor-hover: var(--matcha-bg-2);
+    --button-default-bgColor-active: var(--matcha-bg-3);
+    --button-default-bgColor-selected: var(--matcha-bg-3);
+    --button-default-fgColor-rest: var(--matcha-ink-main);
+    --button-default-borderColor-rest: var(--borderColor-default);
+    --button-default-borderColor-hover: var(--borderColor-emphasis);
+    --button-default-borderColor-active: var(--borderColor-emphasis);
+}

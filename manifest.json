@@ -33,6 +33,13 @@
         {
             "resources": [
                 "styles/maytcha.css",
+                "styles/ramune.css",
+                "styles/taro.css",
+                "styles/sakura.css",
+                "styles/honey.css",
+                "styles/latte.css",
+                "styles/mint.css",
+                "styles/azuki.css",
                 "assets/preview.svg"
             ],
             "matches": [

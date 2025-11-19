@@ -1,0 +1,282 @@
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    /* Core Honey (Yellow) palette */
+    --honey-bg-0: #fffdf5;
+    /* Main canvas */
+    --honey-bg-1: #fff9e0;
+    /* Muted surfaces */
+    --honey-bg-2: #fff2c0;
+    /* Cards/Headers */
+    --honey-bg-3: #ffe899;
+    /* Stronger panels */
+    --honey-bg-4: #ffdb66;
+    /* Emphasis */
+
+    --honey-ink-main: #2e291a;
+    /* Main text */
+    --honey-ink-muted: #635a45;
+    /* Muted text */
+
+    /* Supporting hues */
+    --honey-attention: #e0c865;
+    --honey-danger: #e57575;
+    --honey-done: #a882e6;
+    --honey-sponsor: #db6cb0;
+}
+
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    --bgColor-default: var(--honey-bg-0);
+    --bgColor-muted: var(--honey-bg-1);
+    --bgColor-inset: var(--honey-bg-1);
+    --bgColor-emphasis: var(--honey-bg-4);
+    --bgColor-inverse: var(--honey-bg-4);
+    --bgColor-white: var(--honey-bg-0);
+    --bgColor-black: #111821;
+
+    --bgColor-success-emphasis: #d6b03c;
+    --bgColor-success-muted: #fff9e0;
+
+    --bgColor-danger-emphasis: var(--honey-danger);
+    --bgColor-danger-muted: #ffeef0;
+
+    --bgColor-attention-emphasis: var(--honey-attention);
+    --bgColor-attention-muted: #fffbe6;
+
+    --bgColor-neutral-emphasis: #817a6e;
+    --bgColor-neutral-muted: #f2f0ea;
+
+    --bgColor-severe-emphasis: #cc7642;
+    --bgColor-severe-muted: #fff0e6;
+
+    --bgColor-done-emphasis: var(--honey-done);
+    --bgColor-done-muted: #f4f0ff;
+
+    --bgColor-closed-emphasis: var(--bgColor-danger-emphasis);
+    --bgColor-closed-muted: var(--bgColor-danger-muted);
+
+    --bgColor-open-muted: var(--bgColor-success-muted);
+    --bgColor-draft-emphasis: var(--bgColor-neutral-emphasis);
+    --bgColor-draft-muted: var(--bgColor-neutral-muted);
+
+    --bgColor-upsell-emphasis: var(--bgColor-done-emphasis);
+    --bgColor-upsell-muted: var(--bgColor-done-muted);
+
+    --bgColor-sponsors-emphasis: var(--honey-sponsor);
+    --bgColor-sponsors-muted: #ffeef9;
+
+    --bgColor-disabled: #f4f3f0;
+    --bgColor-transparent: #0000;
+
+    /* Header / navbar */
+    --header-bgColor: var(--honey-bg-3);
+    --header-borderColor-divider: #ffcf80;
+    --headerSearch-bgColor: var(--honey-bg-2);
+    --headerSearch-borderColor: #ffcf80;
+
+    --page-header-bgColor: var(--honey-bg-1);
+    --dashboard-bgColor: var(--honey-bg-0);
+    --card-bgColor: var(--honey-bg-0);
+    --timelineBadge-bgColor: var(--honey-bg-1);
+    --sideNav-bgColor-selected: var(--honey-bg-2);
+
+    /* Overlays */
+    --overlay-bgColor: var(--honey-bg-0);
+    --overlay-borderColor: #ffe8b0;
+    --overlay-backdrop-bgColor: rgba(65, 60, 40, 0.35);
+
+    --menu-bgColor-active: var(--honey-bg-2);
+    --selectMenu-bgColor-active: var(--honey-bg-2);
+    --reactionButton-selected-bgColor-rest: #fff9e0;
+    --reactionButton-selected-bgColor-hover: #fff2c0;
+
+    /* Tooltip */
+    --tooltip-bgColor: #4b4536;
+    --tooltip-fgColor: #fffef6;
+}
+
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    --fgColor-default: var(--honey-ink-main);
+    --fgColor-muted: var(--honey-ink-muted);
+    --fgColor-neutral: var(--honey-ink-muted);
+    --fgColor-black: #1a1f1a;
+    --fgColor-white: #ffffff;
+
+    --fgColor-accent: #d6b03c;
+    --fgColor-link: #d6b03c;
+
+    --fgColor-success: #d6b03c;
+    --fgColor-danger: #cf222e;
+    --fgColor-attention: #9a6700;
+    --fgColor-severe: #bc4c00;
+    --fgColor-done: var(--honey-done);
+    --fgColor-sponsors: var(--honey-sponsor);
+    --fgColor-closed: var(--fgColor-danger);
+    --fgColor-open: var(--fgColor-success);
+    --fgColor-upsell: var(--fgColor-done);
+
+    --fgColor-disabled: #9f9b95;
+    --fgColor-onEmphasis: #ffffff;
+    --fgColor-onInverse: #ffffff;
+
+    --selection-bgColor: rgba(255, 219, 102, 0.4);
+    --highlight-neutral-bgColor: var(--honey-bg-2);
+    --codeMirror-selection-bgColor: rgba(255, 219, 102, 0.4);
+
+    --focus-outlineColor: #d6b03c;
+    --focus-outline: 2px solid #d6b03c;
+}
+
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    --borderColor-default: #fff2c0;
+    --borderColor-muted: #fff2c0b3;
+    --borderColor-emphasis: #ffcf80;
+
+    --borderColor-accent-emphasis: #d6b03c;
+    --borderColor-accent-muted: #ffdb6666;
+
+    --borderColor-success-emphasis: #d6b03c;
+    --borderColor-success-muted: #ffdb6666;
+
+    --borderColor-danger-emphasis: #cf222e;
+    --borderColor-danger-muted: #ff818266;
+
+    --borderColor-attention-emphasis: #9a6700;
+    --borderColor-attention-muted: #d4a72c66;
+
+    --borderColor-neutral-emphasis: #817a6e;
+    --borderColor-neutral-muted: var(--borderColor-muted);
+
+    --borderColor-severe-emphasis: #bc4c00;
+    --borderColor-severe-muted: #fb8f4466;
+
+    --borderColor-sponsors-emphasis: #bf3989;
+    --borderColor-sponsors-muted: #ff80c866;
+
+    --borderColor-closed-emphasis: var(--borderColor-danger-emphasis);
+    --borderColor-closed-muted: var(--borderColor-danger-muted);
+
+    --borderColor-open-emphasis: var(--borderColor-success-emphasis);
+    --borderColor-open-muted: var(--borderColor-success-muted);
+
+    --borderColor-upsell-emphasis: var(--borderColor-done-emphasis);
+    --borderColor-upsell-muted: var(--borderColor-done-muted);
+
+    --borderColor-translucent: rgba(214, 176, 60, 0.32);
+    --borderColor-disabled: #9f9b9533;
+    --borderColor-transparent: #0000;
+
+    --border-default: 0.0625rem solid var(--borderColor-default);
+    --border-muted: 0.0625rem solid var(--borderColor-muted);
+    --border-emphasis: 0.0625rem solid var(--borderColor-emphasis);
+
+    --overlay-borderColor: #fff2c0;
+    --avatar-borderColor: var(--borderColor-translucent);
+}
+
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    --contribution-default-bgColor-0: #fffef6;
+    --contribution-default-bgColor-1: #fff2c0;
+    --contribution-default-bgColor-2: #ffe899;
+    --contribution-default-bgColor-3: #ffdb66;
+    --contribution-default-bgColor-4: #d6b03c;
+
+    --contribution-default-borderColor-0: #1f23280d;
+    --contribution-default-borderColor-1: var(--contribution-default-borderColor-0);
+    --contribution-default-borderColor-2: var(--contribution-default-borderColor-0);
+    --contribution-default-borderColor-3: var(--contribution-default-borderColor-0);
+    --contribution-default-borderColor-4: var(--contribution-default-borderColor-0);
+}
+
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    /* Generic */
+    --label-gray-bgColor-rest: #f2f0ea;
+    --label-gray-bgColor-hover: #ebe8e0;
+    --label-gray-bgColor-active: #e0ddd1;
+    --label-gray-fgColor-rest: #635a45;
+    --label-gray-fgColor-hover: #544d3a;
+    --label-gray-fgColor-active: #443e2d;
+    --label-gray-borderColor: #0000;
+
+    /* Yellow (Success/Primary) */
+    --label-green-bgColor-rest: #fff9e0;
+    --label-green-bgColor-hover: #fff2c0;
+    --label-green-bgColor-active: #ffe899;
+    --label-green-fgColor-rest: #8f7528;
+    --label-green-fgColor-hover: #7a6422;
+    --label-green-fgColor-active: #63511b;
+    --label-green-borderColor: #0000;
+
+    /* Red (Danger) */
+    --label-red-bgColor-rest: #ffeef0;
+    --label-red-bgColor-hover: #ffdce0;
+    --label-red-bgColor-active: #ffc1c7;
+    --label-red-fgColor-rest: #8c1b23;
+    --label-red-fgColor-hover: #70151c;
+    --label-red-fgColor-active: #540f15;
+    --label-red-borderColor: #0000;
+
+    /* Purple (Done) */
+    --label-purple-bgColor-rest: #f4f0ff;
+    --label-purple-bgColor-hover: #e8dfff;
+    --label-purple-bgColor-active: #d3c1ff;
+    --label-purple-fgColor-rest: #6e4bb5;
+    --label-purple-fgColor-hover: #583c91;
+    --label-purple-fgColor-active: #422d6d;
+    --label-purple-borderColor: #0000;
+}
+
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    --codeMirror-bgColor: var(--honey-bg-0);
+    --codeMirror-lines-bgColor: var(--honey-bg-0);
+    --codeMirror-gutters-bgColor: var(--honey-bg-0);
+    --codeMirror-activeline-bgColor: var(--honey-bg-1);
+    --codeMirror-gutterMarker-fgColor-default: var(--honey-bg-0);
+    --codeMirror-lineNumber-fgColor: var(--fgColor-muted);
+
+    --diffBlob-additionLine-bgColor: #fff9e0;
+    --diffBlob-additionLine-fgColor: var(--fgColor-default);
+    --diffBlob-additionNum-bgColor: #ffe899;
+    --diffBlob-additionNum-fgColor: var(--fgColor-default);
+    --diffBlob-additionWord-bgColor: #ffe899;
+
+    --diffBlob-deletionLine-bgColor: #ffeef0;
+    --diffBlob-deletionLine-fgColor: var(--fgColor-default);
+    --diffBlob-deletionNum-bgColor: #ffc1c7;
+    --diffBlob-deletionNum-fgColor: var(--fgColor-default);
+    --diffBlob-deletionWord-bgColor: #ffc1c7;
+
+    --diffBlob-emptyLine-bgColor: var(--bgColor-muted);
+    --diffBlob-emptyNum-bgColor: var(--bgColor-muted);
+
+    --diffBlob-hunkLine-bgColor: var(--honey-bg-2);
+    --diffBlob-hunkLine-fgColor: var(--fgColor-muted);
+    --diffBlob-hunkNum-bgColor-hover: var(--honey-bg-3);
+    --diffBlob-hunkNum-fgColor-hover: var(--fgColor-onEmphasis);
+    --diffBlob-hunkNum-fgColor-rest: var(--fgColor-default);
+}
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    /* Button overrides */
+    --button-default-bgColor-rest: var(--honey-bg-1);
+    --button-default-bgColor-hover: var(--honey-bg-2);
+    --button-default-bgColor-active: var(--honey-bg-3);
+    --button-default-bgColor-selected: var(--honey-bg-3);
+    --button-default-fgColor-rest: var(--honey-ink-main);
+    --button-default-borderColor-rest: var(--borderColor-default);
+    --button-default-borderColor-hover: var(--borderColor-emphasis);
+    --button-default-borderColor-active: var(--borderColor-emphasis);
+}

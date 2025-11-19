@@ -1,0 +1,291 @@
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    /* Core Latte (Brown) palette */
+    --latte-bg-0: #fdfbf9;
+    /* Main canvas */
+    --latte-bg-1: #f4efe9;
+    /* Muted surfaces */
+    --latte-bg-2: #e8ded3;
+    /* Cards/Headers */
+    --latte-bg-3: #dccdbd;
+    /* Stronger panels */
+    --latte-bg-4: #cbb6a0;
+    /* Emphasis */
+
+    --latte-ink-main: #3b3026;
+    /* Main text */
+    --latte-ink-muted: #6d5e50;
+    /* Muted text */
+
+    /* Supporting hues */
+    --latte-attention: #e0c865;
+    --latte-danger: #e57575;
+    --latte-done: #a882e6;
+    --latte-sponsor: #db6cb0;
+}
+
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    --bgColor-default: var(--latte-bg-0);
+    --bgColor-muted: var(--latte-bg-1);
+    --bgColor-inset: var(--latte-bg-1);
+    --bgColor-emphasis: var(--latte-bg-4);
+    --bgColor-inverse: var(--latte-bg-4);
+    --bgColor-white: var(--latte-bg-0);
+    --bgColor-black: #111821;
+
+    --bgColor-success-emphasis: #a68b72;
+    --bgColor-success-muted: #f4efe9;
+
+    --bgColor-danger-emphasis: var(--latte-danger);
+    --bgColor-danger-muted: #ffeef0;
+
+    --bgColor-attention-emphasis: var(--latte-attention);
+    --bgColor-attention-muted: #fffbe6;
+
+    --bgColor-neutral-emphasis: #8a7f75;
+    --bgColor-neutral-muted: #f0ece8;
+
+    --bgColor-severe-emphasis: #cc7642;
+    --bgColor-severe-muted: #fff0e6;
+
+    --bgColor-done-emphasis: var(--latte-done);
+    --bgColor-done-muted: #f4f0ff;
+
+    --bgColor-closed-emphasis: var(--bgColor-danger-emphasis);
+    --bgColor-closed-muted: var(--bgColor-danger-muted);
+
+    --bgColor-open-muted: var(--bgColor-success-muted);
+    --bgColor-draft-emphasis: var(--bgColor-neutral-emphasis);
+    --bgColor-draft-muted: var(--bgColor-neutral-muted);
+
+    --bgColor-upsell-emphasis: var(--bgColor-done-emphasis);
+    --bgColor-upsell-muted: var(--bgColor-done-muted);
+
+    --bgColor-sponsors-emphasis: var(--latte-sponsor);
+    --bgColor-sponsors-muted: #ffeef9;
+
+    --bgColor-disabled: #f2f0ed;
+    --bgColor-transparent: #0000;
+
+    /* Header / navbar */
+    --header-bgColor: var(--latte-bg-3);
+    --header-borderColor-divider: #cbb6a0;
+    --headerSearch-bgColor: var(--latte-bg-2);
+    --headerSearch-borderColor: #cbb6a0;
+
+    --page-header-bgColor: var(--latte-bg-1);
+    --dashboard-bgColor: var(--latte-bg-0);
+    --card-bgColor: var(--latte-bg-0);
+    --timelineBadge-bgColor: var(--latte-bg-1);
+    --sideNav-bgColor-selected: var(--latte-bg-2);
+
+    /* Overlays */
+    --overlay-bgColor: var(--latte-bg-0);
+    --overlay-borderColor: #e8ded3;
+    --overlay-backdrop-bgColor: rgba(60, 50, 40, 0.35);
+
+    --menu-bgColor-active: var(--latte-bg-2);
+    --selectMenu-bgColor-active: var(--latte-bg-2);
+    --reactionButton-selected-bgColor-rest: #f4efe9;
+    --reactionButton-selected-bgColor-hover: #e8ded3;
+
+    /* Tooltip */
+    --tooltip-bgColor: #4b3e33;
+    --tooltip-fgColor: #fbf9f6;
+}
+
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    --fgColor-default: var(--latte-ink-main);
+    --fgColor-muted: var(--latte-ink-muted);
+    --fgColor-neutral: var(--latte-ink-muted);
+    --fgColor-black: #1a1f1a;
+    --fgColor-white: #ffffff;
+
+    --fgColor-accent: #a68b72;
+    --fgColor-link: #a68b72;
+
+    --fgColor-success: #a68b72;
+    --fgColor-danger: #cf222e;
+    --fgColor-attention: #9a6700;
+    --fgColor-severe: #bc4c00;
+    --fgColor-done: var(--latte-done);
+    --fgColor-sponsors: var(--latte-sponsor);
+    --fgColor-closed: var(--fgColor-danger);
+    --fgColor-open: var(--fgColor-success);
+    --fgColor-upsell: var(--fgColor-done);
+
+    --fgColor-disabled: #9f9995;
+    --fgColor-onEmphasis: #ffffff;
+    --fgColor-onInverse: #ffffff;
+
+    --selection-bgColor: rgba(203, 182, 160, 0.4);
+    --highlight-neutral-bgColor: var(--latte-bg-2);
+    --codeMirror-selection-bgColor: rgba(203, 182, 160, 0.4);
+
+    --focus-outlineColor: #a68b72;
+    --focus-outline: 2px solid #a68b72;
+}
+
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    --borderColor-default: #e8ded3;
+    --borderColor-muted: #e8ded3b3;
+    --borderColor-emphasis: #cbb6a0;
+
+    --borderColor-accent-emphasis: #a68b72;
+    --borderColor-accent-muted: #cbb6a066;
+
+    --borderColor-success-emphasis: #a68b72;
+    --borderColor-success-muted: #cbb6a066;
+
+    --borderColor-danger-emphasis: #cf222e;
+    --borderColor-danger-muted: #ff818266;
+
+    --borderColor-attention-emphasis: #9a6700;
+    --borderColor-attention-muted: #d4a72c66;
+
+    --borderColor-neutral-emphasis: #8a7f75;
+    --borderColor-neutral-muted: var(--borderColor-muted);
+
+    --borderColor-severe-emphasis: #bc4c00;
+    --borderColor-severe-muted: #fb8f4466;
+
+    --borderColor-sponsors-emphasis: #bf3989;
+    --borderColor-sponsors-muted: #ff80c866;
+
+    --borderColor-closed-emphasis: var(--borderColor-danger-emphasis);
+    --borderColor-closed-muted: var(--borderColor-danger-muted);
+
+    --borderColor-open-emphasis: var(--borderColor-success-emphasis);
+    --borderColor-open-muted: var(--borderColor-success-muted);
+
+    --borderColor-upsell-emphasis: var(--borderColor-done-emphasis);
+    --borderColor-upsell-muted: var(--borderColor-done-muted);
+
+    --borderColor-translucent: rgba(166, 139, 114, 0.32);
+    --borderColor-disabled: #9f999533;
+    --borderColor-transparent: #0000;
+
+    --border-default: 0.0625rem solid var(--borderColor-default);
+    --border-muted: 0.0625rem solid var(--borderColor-muted);
+    --border-emphasis: 0.0625rem solid var(--borderColor-emphasis);
+
+    --overlay-borderColor: #e8ded3;
+    --avatar-borderColor: var(--borderColor-translucent);
+}
+
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    --contribution-default-bgColor-0: #fbf9f6;
+    --contribution-default-bgColor-1: #e8ded3;
+    --contribution-default-bgColor-2: #dccdbd;
+    --contribution-default-bgColor-3: #cbb6a0;
+    --contribution-default-bgColor-4: #a68b72;
+
+    --contribution-default-borderColor-0: #1f23280d;
+    --contribution-default-borderColor-1: var(--contribution-default-borderColor-0);
+    --contribution-default-borderColor-2: var(--contribution-default-borderColor-0);
+    --contribution-default-borderColor-3: var(--contribution-default-borderColor-0);
+    --contribution-default-borderColor-4: var(--contribution-default-borderColor-0);
+}
+
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    /* Generic */
+    --label-gray-bgColor-rest: #f0ece8;
+    --label-gray-bgColor-hover: #e8e2dc;
+    --label-gray-bgColor-active: #ddd6ce;
+    --label-gray-fgColor-rest: #6d5e50;
+    --label-gray-fgColor-hover: #5e5044;
+    --label-gray-fgColor-active: #4e4238;
+    --label-gray-borderColor: #0000;
+
+    /* Brown (Success/Primary) */
+    --label-green-bgColor-rest: #f4efe9;
+    --label-green-bgColor-hover: #e8ded3;
+    --label-green-bgColor-active: #dccdbd;
+    --label-green-fgColor-rest: #6e5c4c;
+    --label-green-fgColor-hover: #5e4e40;
+    --label-green-fgColor-active: #4d3f34;
+    --label-green-borderColor: #0000;
+
+    /* Red (Danger) */
+    --label-red-bgColor-rest: #ffeef0;
+    --label-red-bgColor-hover: #ffdce0;
+    --label-red-bgColor-active: #ffc1c7;
+    --label-red-fgColor-rest: #8c1b23;
+    --label-red-fgColor-hover: #70151c;
+    --label-red-fgColor-active: #540f15;
+    --label-red-borderColor: #0000;
+
+    /* Yellow (Attention) */
+    --label-yellow-bgColor-rest: #fffbe6;
+    --label-yellow-bgColor-hover: #fff8c5;
+    --label-yellow-bgColor-active: #ffea7f;
+    --label-yellow-fgColor-rest: #7a5200;
+    --label-yellow-fgColor-hover: #614100;
+    --label-yellow-fgColor-active: #483000;
+    --label-yellow-borderColor: #0000;
+
+    /* Purple (Done) */
+    --label-purple-bgColor-rest: #f4f0ff;
+    --label-purple-bgColor-hover: #e8dfff;
+    --label-purple-bgColor-active: #d3c1ff;
+    --label-purple-fgColor-rest: #6e4bb5;
+    --label-purple-fgColor-hover: #583c91;
+    --label-purple-fgColor-active: #422d6d;
+    --label-purple-borderColor: #0000;
+}
+
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    --codeMirror-bgColor: var(--latte-bg-0);
+    --codeMirror-lines-bgColor: var(--latte-bg-0);
+    --codeMirror-gutters-bgColor: var(--latte-bg-0);
+    --codeMirror-activeline-bgColor: var(--latte-bg-1);
+    --codeMirror-gutterMarker-fgColor-default: var(--latte-bg-0);
+    --codeMirror-lineNumber-fgColor: var(--fgColor-muted);
+
+    --diffBlob-additionLine-bgColor: #f4efe9;
+    --diffBlob-additionLine-fgColor: var(--fgColor-default);
+    --diffBlob-additionNum-bgColor: #dccdbd;
+    --diffBlob-additionNum-fgColor: var(--fgColor-default);
+    --diffBlob-additionWord-bgColor: #dccdbd;
+
+    --diffBlob-deletionLine-bgColor: #ffeef0;
+    --diffBlob-deletionLine-fgColor: var(--fgColor-default);
+    --diffBlob-deletionNum-bgColor: #ffc1c7;
+    --diffBlob-deletionNum-fgColor: var(--fgColor-default);
+    --diffBlob-deletionWord-bgColor: #ffc1c7;
+
+    --diffBlob-emptyLine-bgColor: var(--bgColor-muted);
+    --diffBlob-emptyNum-bgColor: var(--bgColor-muted);
+
+    --diffBlob-hunkLine-bgColor: var(--latte-bg-2);
+    --diffBlob-hunkLine-fgColor: var(--fgColor-muted);
+    --diffBlob-hunkNum-bgColor-hover: var(--latte-bg-3);
+    --diffBlob-hunkNum-fgColor-hover: var(--fgColor-onEmphasis);
+    --diffBlob-hunkNum-fgColor-rest: var(--fgColor-default);
+}
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    /* Button overrides */
+    --button-default-bgColor-rest: var(--latte-bg-1);
+    --button-default-bgColor-hover: var(--latte-bg-2);
+    --button-default-bgColor-active: var(--latte-bg-3);
+    --button-default-bgColor-selected: var(--latte-bg-3);
+    --button-default-fgColor-rest: var(--latte-ink-main);
+    --button-default-borderColor-rest: var(--borderColor-default);
+    --button-default-borderColor-hover: var(--borderColor-emphasis);
+    --button-default-borderColor-active: var(--borderColor-emphasis);
+}

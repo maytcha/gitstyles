@@ -28,38 +28,54 @@
                 contrastSection
             ].filter(Boolean);
 
+            // Define themes
+            const themes = [
+                { id: 'default', name: 'GitHub Default', description: 'Use standard GitHub themes', color: '#f6f8fa' },
+                { id: 'maytcha', name: 'Maytcha', description: 'A relaxing matcha green theme', image: 'https://z.hajspace.com/u/JghUHM.png', author: 'maytcha' },
+                { id: 'ramune', name: 'Ramune', description: 'A refreshing soda blue theme', color: '#b2d4ff', author: 'maytcha' },
+                { id: 'taro', name: 'Taro', description: 'A sweet purple taro theme', color: '#d1c0ff', author: 'maytcha' },
+                { id: 'sakura', name: 'Sakura', description: 'A soft pink cherry blossom theme', color: '#ffc2d6', author: 'maytcha' },
+                { id: 'honey', name: 'Honey', description: 'A warm yellow honey theme', color: '#ffe899', author: 'maytcha' },
+                { id: 'latte', name: 'Latte', description: 'A cozy brown coffee theme', color: '#dccdbd', author: 'maytcha' },
+                { id: 'mint', name: 'Mint', description: 'A fresh cyan mint theme', color: '#b2e0d6', author: 'maytcha' },
+                { id: 'azuki', name: 'Azuki', description: 'A sweet red bean theme', color: '#ffc7c7', author: 'maytcha' }
+            ];
+
             // 1. Create GitStyles Container
             const gitStylesContainer = document.createElement('div');
             gitStylesContainer.id = 'gitstyles-settings-container';
             gitStylesContainer.className = 'mb-4';
+
+            const cardsHtml = themes.map(theme => {
+                const isDefault = theme.id === 'default';
+                const previewContent = theme.image
+                    ? `<img alt="${theme.name} Preview" src="${theme.image}" style="position: absolute; width: 100%; height: 100%; object-fit: cover; top: 0; left: 0;">`
+                    : `<div style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-color: ${theme.color};"></div>`;
+
+                const authorHtml = theme.author
+                    ? `<span class="text-normal f6 color-fg-muted"> &bull; by ${theme.author}</span>`
+                    : '';
+
+                return `
+                <div class="position-relative mb-3 flex-shrink-0 col-6 col-md-4">
+                    <input class="position-absolute" id="gitstyles-option-${theme.id}" type="radio" name="gitstyles_theme" value="${theme.id}" style="position:absolute;z-index:5;margin-top: calc(52.6315789474% + 4px);left:19px;">
+                    <label class="radio-label pl-0 pr-0 pt-0 pb-2 overflow-hidden color-theme-toggle-label width-full height-full" for="gitstyles-option-${theme.id}">
+                        <div class="mb-2 width-full overflow-hidden border-bottom" style="padding-bottom: 52.63%; position: relative; background-color: ${theme.color || 'transparent'}">
+                            ${previewContent}
+                        </div>
+                        <div class="ml-5 pr-2">
+                            <div class="text-bold">${theme.name}${authorHtml}</div>
+                            <div class="f6 color-fg-muted">${theme.description}</div>
+                        </div>
+                    </label>
+                </div>
+            `;
+            }).join('');
+
             gitStylesContainer.innerHTML = `
             <h3 class="h5 mb-2">gitstyles</h3>
             <div class="d-flex gutter-condensed flex-wrap" role="radiogroup" aria-label="GitStyles theme picker">
-                <!-- Default / Off Card -->
-                <div class="position-relative mb-3 flex-shrink-0 col-6 col-md-4">
-                    <input class="position-absolute" id="gitstyles-option-default" type="radio" name="gitstyles_theme" value="default" style="position:absolute;z-index:5;margin-top: calc(52.6315789474% + 4px);left:19px;">
-                    <label class="radio-label pl-0 pr-0 pt-0 pb-2 overflow-hidden color-theme-toggle-label width-full height-full" for="gitstyles-option-default">
-                        <div class="d-block border-bottom mb-2 width-full color-bg-subtle" style="height: 0; padding-bottom: 52.63%;"></div>
-                        <div class="ml-5 pr-2">
-                            <div class="text-bold">GitHub Default</div>
-                            <div class="f6 color-fg-muted">Use standard GitHub themes</div>
-                        </div>
-                    </label>
-                </div>
-
-                <!-- Maytcha Card -->
-                <div class="position-relative mb-3 flex-shrink-0 col-6 col-md-4">
-                    <input class="position-absolute" id="gitstyles-option-maytcha" type="radio" name="gitstyles_theme" value="maytcha" style="position:absolute;z-index:5;margin-top: calc(52.6315789474% + 4px);left:19px;">
-                    <label class="radio-label pl-0 pr-0 pt-0 pb-2 overflow-hidden color-theme-toggle-label width-full height-full" for="gitstyles-option-maytcha">
-                        <div class="mb-2 width-full overflow-hidden border-bottom" style="padding-bottom: 52.63%; position: relative;">
-                            <img alt="Maytcha Preview" src="https://z.hajspace.com/u/JghUHM.png" style="position: absolute; width: 100%; height: 100%; object-fit: cover; top: 0; left: 0;">
-                        </div>
-                        <div class="ml-5 pr-2">
-                            <div class="text-bold">Maytcha <span class="text-normal f6 color-fg-muted"> &bull; by maytcha</span></div>
-                            <div class="f6 color-fg-muted">A relaxing matcha green theme</div>
-                        </div>
-                    </label>
-                </div>
+                ${cardsHtml}
             </div>
         `;
 
@@ -73,7 +89,7 @@
 
             // Helper to enforce base theme
             function enforceBaseTheme(themeName) {
-                if (themeName === 'maytcha') {
+                if (themeName !== 'default') {
                     const lightOption = document.getElementById('option-light');
                     if (lightOption && !lightOption.checked) {
                         lightOption.click(); // Click to trigger GitHub's internal handlers
@@ -83,7 +99,7 @@
 
             // Helper to toggle native visibility
             function updateNativeVisibility(themeName) {
-                const isDefault = themeName !== 'maytcha';
+                const isDefault = themeName === 'default' || !themeName;
                 nativeElements.forEach(el => {
                     if (el) el.style.display = isDefault ? '' : 'none';
                 });
@@ -95,14 +111,14 @@
 
             // Load saved state
             chrome.storage.local.get(['theme'], (result) => {
-                if (result.theme === 'maytcha') {
-                    const maytchaRadio = document.getElementById('gitstyles-option-maytcha');
-                    if (maytchaRadio) maytchaRadio.checked = true;
-                    enforceBaseTheme('maytcha');
-                    updateNativeVisibility('maytcha');
+                const currentTheme = result.theme || 'default';
+                const radio = document.getElementById(`gitstyles-option-${currentTheme}`);
+                if (radio) radio.checked = true;
+
+                if (currentTheme !== 'default') {
+                    enforceBaseTheme(currentTheme);
+                    updateNativeVisibility(currentTheme);
                 } else {
-                    const defaultRadio = document.getElementById('gitstyles-option-default');
-                    if (defaultRadio) defaultRadio.checked = true;
                     updateNativeVisibility('default');
                 }
             });

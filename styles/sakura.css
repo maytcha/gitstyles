@@ -1,0 +1,292 @@
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    /* Core Sakura (Pink) palette */
+    --sakura-bg-0: #fff8fa;
+    /* Main canvas */
+    --sakura-bg-1: #ffebf2;
+    /* Muted surfaces */
+    --sakura-bg-2: #ffdae6;
+    /* Cards/Headers */
+    --sakura-bg-3: #ffc2d6;
+    /* Stronger panels */
+    --sakura-bg-4: #ff9ec0;
+    /* Emphasis */
+
+    --sakura-ink-main: #2e1a21;
+    /* Main text */
+    --sakura-ink-muted: #634550;
+    /* Muted text */
+
+    /* Supporting hues */
+    --sakura-attention: #e0c865;
+    --sakura-danger: #e57575;
+    --sakura-done: #a882e6;
+    --sakura-sponsor: #db6cb0;
+}
+
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    --bgColor-default: var(--sakura-bg-0);
+    --bgColor-muted: var(--sakura-bg-1);
+    --bgColor-inset: var(--sakura-bg-1);
+    --bgColor-emphasis: var(--sakura-bg-4);
+    --bgColor-inverse: var(--sakura-bg-4);
+    --bgColor-white: var(--sakura-bg-0);
+    --bgColor-black: #111821;
+
+    --bgColor-success-emphasis: #d66b96;
+    --bgColor-success-muted: #ffebf2;
+
+    --bgColor-danger-emphasis: var(--sakura-danger);
+    --bgColor-danger-muted: #ffeef0;
+
+    --bgColor-attention-emphasis: var(--sakura-attention);
+    --bgColor-attention-muted: #fffbe6;
+
+    --bgColor-neutral-emphasis: #816e74;
+    --bgColor-neutral-muted: #f2eaec;
+
+    --bgColor-severe-emphasis: #cc7642;
+    --bgColor-severe-muted: #fff0e6;
+
+    --bgColor-done-emphasis: var(--sakura-done);
+    --bgColor-done-muted: #f4f0ff;
+
+    --bgColor-closed-emphasis: var(--bgColor-danger-emphasis);
+    --bgColor-closed-muted: var(--bgColor-danger-muted);
+
+    --bgColor-open-muted: var(--bgColor-success-muted);
+    --bgColor-draft-emphasis: var(--bgColor-neutral-emphasis);
+    --bgColor-draft-muted: var(--bgColor-neutral-muted);
+
+    --bgColor-upsell-emphasis: var(--bgColor-done-emphasis);
+    --bgColor-upsell-muted: var(--bgColor-done-muted);
+
+    --bgColor-sponsors-emphasis: var(--sakura-sponsor);
+    --bgColor-sponsors-muted: #ffeef9;
+
+    --bgColor-disabled: #f4f0f1;
+    --bgColor-transparent: #0000;
+
+    /* Header / navbar */
+    --header-bgColor: var(--sakura-bg-3);
+    --header-borderColor-divider: #ffadd0;
+    --headerSearch-bgColor: var(--sakura-bg-2);
+    --headerSearch-borderColor: #ffadd0;
+
+    --page-header-bgColor: var(--sakura-bg-1);
+    --dashboard-bgColor: var(--sakura-bg-0);
+    --card-bgColor: var(--sakura-bg-0);
+    --timelineBadge-bgColor: var(--sakura-bg-1);
+    --sideNav-bgColor-selected: var(--sakura-bg-2);
+
+    /* Overlays */
+    --overlay-bgColor: var(--sakura-bg-0);
+    --overlay-borderColor: #ffcce0;
+    --overlay-backdrop-bgColor: rgba(65, 40, 50, 0.35);
+
+    --menu-bgColor-active: var(--sakura-bg-2);
+    --selectMenu-bgColor-active: var(--sakura-bg-2);
+    --reactionButton-selected-bgColor-rest: #ffebf2;
+    --reactionButton-selected-bgColor-hover: #ffdae6;
+
+    /* Tooltip */
+    --tooltip-bgColor: #4b2d36;
+    --tooltip-fgColor: #fff6f9;
+}
+
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    --fgColor-default: var(--sakura-ink-main);
+    --fgColor-muted: var(--sakura-ink-muted);
+    --fgColor-neutral: var(--sakura-ink-muted);
+    --fgColor-black: #1a1f1a;
+    --fgColor-white: #ffffff;
+
+    --fgColor-accent: #d66b96;
+    --fgColor-link: #d66b96;
+
+    --fgColor-success: #d66b96;
+    --fgColor-danger: #cf222e;
+    --fgColor-attention: #9a6700;
+    --fgColor-severe: #bc4c00;
+    --fgColor-done: var(--sakura-done);
+    --fgColor-sponsors: var(--sakura-sponsor);
+    --fgColor-closed: var(--fgColor-danger);
+    --fgColor-open: var(--fgColor-success);
+    --fgColor-upsell: var(--fgColor-done);
+
+    --fgColor-disabled: #9f9598;
+    --fgColor-onEmphasis: #ffffff;
+    --fgColor-onInverse: #ffffff;
+
+    --selection-bgColor: rgba(255, 158, 192, 0.4);
+    --highlight-neutral-bgColor: var(--sakura-bg-2);
+    --codeMirror-selection-bgColor: rgba(255, 158, 192, 0.4);
+
+    --focus-outlineColor: #d66b96;
+    --focus-outline: 2px solid #d66b96;
+}
+
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    --borderColor-default: #ffdae6;
+    --borderColor-muted: #ffdae6b3;
+    --borderColor-emphasis: #ffadd0;
+
+    --borderColor-accent-emphasis: #d66b96;
+    --borderColor-accent-muted: #ff9ec066;
+
+    --borderColor-success-emphasis: #d66b96;
+    --borderColor-success-muted: #ff9ec066;
+
+    --borderColor-danger-emphasis: #cf222e;
+    --borderColor-danger-muted: #ff818266;
+
+    --borderColor-attention-emphasis: #9a6700;
+    --borderColor-attention-muted: #d4a72c66;
+
+    --borderColor-neutral-emphasis: #816e74;
+    --borderColor-neutral-muted: var(--borderColor-muted);
+
+    --borderColor-severe-emphasis: #bc4c00;
+    --borderColor-severe-muted: #fb8f4466;
+
+    --borderColor-sponsors-emphasis: #bf3989;
+    --borderColor-sponsors-muted: #ff80c866;
+
+    --borderColor-closed-emphasis: var(--borderColor-danger-emphasis);
+    --borderColor-closed-muted: var(--borderColor-danger-muted);
+
+    --borderColor-open-emphasis: var(--borderColor-success-emphasis);
+    --borderColor-open-muted: var(--borderColor-success-muted);
+
+    --borderColor-upsell-emphasis: var(--borderColor-done-emphasis);
+    --borderColor-upsell-muted: var(--borderColor-done-muted);
+
+    --borderColor-translucent: rgba(214, 107, 150, 0.32);
+    --borderColor-disabled: #9f959833;
+    --borderColor-transparent: #0000;
+
+    --border-default: 0.0625rem solid var(--borderColor-default);
+    --border-muted: 0.0625rem solid var(--borderColor-muted);
+    --border-emphasis: 0.0625rem solid var(--borderColor-emphasis);
+
+    --overlay-borderColor: #ffdae6;
+    --avatar-borderColor: var(--borderColor-translucent);
+}
+
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    --contribution-default-bgColor-0: #fff6f9;
+    --contribution-default-bgColor-1: #ffdae6;
+    --contribution-default-bgColor-2: #ffc2d6;
+    --contribution-default-bgColor-3: #ff9ec0;
+    --contribution-default-bgColor-4: #d66b96;
+
+    --contribution-default-borderColor-0: #1f23280d;
+    --contribution-default-borderColor-1: var(--contribution-default-borderColor-0);
+    --contribution-default-borderColor-2: var(--contribution-default-borderColor-0);
+    --contribution-default-borderColor-3: var(--contribution-default-borderColor-0);
+    --contribution-default-borderColor-4: var(--contribution-default-borderColor-0);
+}
+
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    /* Generic */
+    --label-gray-bgColor-rest: #f2eaec;
+    --label-gray-bgColor-hover: #ebe0e3;
+    --label-gray-bgColor-active: #e0d1d6;
+    --label-gray-fgColor-rest: #634550;
+    --label-gray-fgColor-hover: #543a44;
+    --label-gray-fgColor-active: #442d36;
+    --label-gray-borderColor: #0000;
+
+    /* Pink (Success/Primary) */
+    --label-green-bgColor-rest: #ffebf2;
+    --label-green-bgColor-hover: #ffdae6;
+    --label-green-bgColor-active: #ffc2d6;
+    --label-green-fgColor-rest: #8f3e63;
+    --label-green-fgColor-hover: #7a3354;
+    --label-green-fgColor-active: #632944;
+    --label-green-borderColor: #0000;
+
+    /* Red (Danger) */
+    --label-red-bgColor-rest: #ffeef0;
+    --label-red-bgColor-hover: #ffdce0;
+    --label-red-bgColor-active: #ffc1c7;
+    --label-red-fgColor-rest: #8c1b23;
+    --label-red-fgColor-hover: #70151c;
+    --label-red-fgColor-active: #540f15;
+    --label-red-borderColor: #0000;
+
+    /* Yellow (Attention) */
+    --label-yellow-bgColor-rest: #fffbe6;
+    --label-yellow-bgColor-hover: #fff8c5;
+    --label-yellow-bgColor-active: #ffea7f;
+    --label-yellow-fgColor-rest: #7a5200;
+    --label-yellow-fgColor-hover: #614100;
+    --label-yellow-fgColor-active: #483000;
+    --label-yellow-borderColor: #0000;
+
+    /* Purple (Done) */
+    --label-purple-bgColor-rest: #f4f0ff;
+    --label-purple-bgColor-hover: #e8dfff;
+    --label-purple-bgColor-active: #d3c1ff;
+    --label-purple-fgColor-rest: #6e4bb5;
+    --label-purple-fgColor-hover: #583c91;
+    --label-purple-fgColor-active: #422d6d;
+    --label-purple-borderColor: #0000;
+}
+
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    --codeMirror-bgColor: var(--sakura-bg-0);
+    --codeMirror-lines-bgColor: var(--sakura-bg-0);
+    --codeMirror-gutters-bgColor: var(--sakura-bg-0);
+    --codeMirror-activeline-bgColor: var(--sakura-bg-1);
+    --codeMirror-gutterMarker-fgColor-default: var(--sakura-bg-0);
+    --codeMirror-lineNumber-fgColor: var(--fgColor-muted);
+
+    --diffBlob-additionLine-bgColor: #ffebf2;
+    --diffBlob-additionLine-fgColor: var(--fgColor-default);
+    --diffBlob-additionNum-bgColor: #ffc2d6;
+    --diffBlob-additionNum-fgColor: var(--fgColor-default);
+    --diffBlob-additionWord-bgColor: #ffc2d6;
+
+    --diffBlob-deletionLine-bgColor: #ffeef0;
+    --diffBlob-deletionLine-fgColor: var(--fgColor-default);
+    --diffBlob-deletionNum-bgColor: #ffc1c7;
+    --diffBlob-deletionNum-fgColor: var(--fgColor-default);
+    --diffBlob-deletionWord-bgColor: #ffc1c7;
+
+    --diffBlob-emptyLine-bgColor: var(--bgColor-muted);
+    --diffBlob-emptyNum-bgColor: var(--bgColor-muted);
+
+    --diffBlob-hunkLine-bgColor: var(--sakura-bg-2);
+    --diffBlob-hunkLine-fgColor: var(--fgColor-muted);
+    --diffBlob-hunkNum-bgColor-hover: var(--sakura-bg-3);
+    --diffBlob-hunkNum-fgColor-hover: var(--fgColor-onEmphasis);
+    --diffBlob-hunkNum-fgColor-rest: var(--fgColor-default);
+}
+
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    /* Button overrides */
+    --button-default-bgColor-rest: var(--sakura-bg-1);
+    --button-default-bgColor-hover: var(--sakura-bg-2);
+    --button-default-bgColor-active: var(--sakura-bg-3);
+    --button-default-bgColor-selected: var(--sakura-bg-3);
+    --button-default-fgColor-rest: var(--sakura-ink-main);
+    --button-default-borderColor-rest: var(--borderColor-default);
+    --button-default-borderColor-hover: var(--borderColor-emphasis);
+    --button-default-borderColor-active: var(--borderColor-emphasis);
+}
