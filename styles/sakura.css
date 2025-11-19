@@ -287,6 +287,6 @@
     --button-default-bgColor-selected: var(--sakura-bg-3);
     --button-default-fgColor-rest: var(--sakura-ink-main);
     --button-default-borderColor-rest: var(--borderColor-default);
-    --button-default-borderColor-hover: var(--borderColor-emphasis);
-    --button-default-borderColor-active: var(--borderColor-emphasis);
+    --button-default-borderColor-hover: var(--borderColor-default);
+    --button-default-borderColor-active: var(--borderColor-default);
 }
