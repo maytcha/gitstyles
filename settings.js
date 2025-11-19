@@ -38,7 +38,8 @@
                 { id: 'honey', name: 'Honey', description: 'A warm yellow honey theme', color: '#ffe899', author: 'maytcha' },
                 { id: 'latte', name: 'Latte', description: 'A cozy brown coffee theme', color: '#dccdbd', author: 'maytcha' },
                 { id: 'mint', name: 'Mint', description: 'A fresh cyan mint theme', color: '#b2e0d6', author: 'maytcha' },
-                { id: 'azuki', name: 'Azuki', description: 'A sweet red bean theme', color: '#ffc7c7', author: 'maytcha' }
+                { id: 'azuki', name: 'Azuki', description: 'A sweet red bean theme', color: '#ffc7c7', author: 'maytcha' },
+                { id: 'catppuccin-macchiato-rose', name: 'Catppuccin Rose', description: 'Macchiato dark theme with rose accents', color: '#24273a', author: 'maytcha' }
             ];
 
             // 1. Create GitStyles Container
@@ -89,11 +90,14 @@
 
             // Helper to enforce base theme
             function enforceBaseTheme(themeName) {
-                if (themeName !== 'default') {
-                    const lightOption = document.getElementById('option-light');
-                    if (lightOption && !lightOption.checked) {
-                        lightOption.click(); // Click to trigger GitHub's internal handlers
-                    }
+                if (themeName === 'default') return;
+
+                const isDark = themeName === 'catppuccin-macchiato-rose';
+                const targetOptionId = isDark ? 'option-dark' : 'option-light';
+                const targetOption = document.getElementById(targetOptionId);
+
+                if (targetOption && !targetOption.checked) {
+                    targetOption.click(); // Click to trigger GitHub's internal handlers
                 }
             }
 

@@ -1,0 +1,269 @@
+:root,
+[data-color-mode="dark"][data-dark-theme*="dark"],
+[data-color-mode="auto"][data-dark-theme*="dark"] {
+    /* Catppuccin Macchiato Palette */
+    --ctp-base: #24273a;
+    --ctp-mantle: #1e2030;
+    --ctp-crust: #181926;
+
+    --ctp-text: #cad3f5;
+    --ctp-subtext0: #a5adcb;
+    --ctp-subtext1: #b8c0e0;
+
+    --ctp-surface0: #363a4f;
+    --ctp-surface1: #494d64;
+    --ctp-surface2: #5b6078;
+
+    --ctp-overlay0: #6e738d;
+    --ctp-overlay1: #8087a2;
+
+    --ctp-rosewater: #f4dbd6;
+    --ctp-flamingo: #f0c6c6;
+    --ctp-pink: #f5bde6;
+    --ctp-mauve: #c6a0f6;
+    --ctp-red: #ed8796;
+    --ctp-maroon: #ee99a0;
+    --ctp-peach: #f5a97f;
+    --ctp-yellow: #eed49f;
+    --ctp-green: #a6da95;
+    --ctp-teal: #8bd5ca;
+    --ctp-sky: #91d7e3;
+    --ctp-sapphire: #7dc4e4;
+    --ctp-blue: #8aadf4;
+    --ctp-lavender: #b7bdf8;
+}
+
+:root,
+[data-color-mode="dark"][data-dark-theme*="dark"],
+[data-color-mode="auto"][data-dark-theme*="dark"] {
+    /* Canvas / Backgrounds */
+    --bgColor-default: var(--ctp-base);
+    --bgColor-muted: var(--ctp-mantle);
+    --bgColor-inset: var(--ctp-crust);
+    --bgColor-emphasis: var(--ctp-text);
+    --bgColor-inverse: var(--ctp-text);
+    --bgColor-white: var(--ctp-base);
+    --bgColor-black: var(--ctp-crust);
+
+    /* State Backgrounds */
+    --bgColor-success-emphasis: var(--ctp-green);
+    --bgColor-success-muted: color-mix(in srgb, var(--ctp-green), transparent 80%);
+
+    --bgColor-danger-emphasis: var(--ctp-red);
+    --bgColor-danger-muted: color-mix(in srgb, var(--ctp-red), transparent 80%);
+
+    --bgColor-attention-emphasis: var(--ctp-yellow);
+    --bgColor-attention-muted: color-mix(in srgb, var(--ctp-yellow), transparent 80%);
+
+    --bgColor-neutral-emphasis: var(--ctp-overlay0);
+    --bgColor-neutral-muted: color-mix(in srgb, var(--ctp-overlay0), transparent 80%);
+
+    --bgColor-severe-emphasis: var(--ctp-peach);
+    --bgColor-severe-muted: color-mix(in srgb, var(--ctp-peach), transparent 80%);
+
+    --bgColor-done-emphasis: var(--ctp-mauve);
+    --bgColor-done-muted: color-mix(in srgb, var(--ctp-mauve), transparent 80%);
+
+    --bgColor-closed-emphasis: var(--bgColor-danger-emphasis);
+    --bgColor-closed-muted: var(--bgColor-danger-muted);
+
+    --bgColor-open-muted: var(--bgColor-success-muted);
+    --bgColor-draft-emphasis: var(--bgColor-neutral-emphasis);
+    --bgColor-draft-muted: var(--bgColor-neutral-muted);
+
+    --bgColor-upsell-emphasis: var(--bgColor-done-emphasis);
+    --bgColor-upsell-muted: var(--bgColor-done-muted);
+
+    --bgColor-sponsors-emphasis: var(--ctp-pink);
+    --bgColor-sponsors-muted: color-mix(in srgb, var(--ctp-pink), transparent 80%);
+
+    --bgColor-disabled: var(--ctp-surface0);
+    --bgColor-transparent: #0000;
+
+    /* Header / Navbar */
+    --header-bgColor: var(--ctp-mantle);
+    --header-borderColor-divider: var(--ctp-surface0);
+    --headerSearch-bgColor: var(--ctp-surface0);
+    --headerSearch-borderColor: var(--ctp-surface1);
+
+    --page-header-bgColor: var(--ctp-base);
+    --dashboard-bgColor: var(--ctp-base);
+    --card-bgColor: var(--ctp-base);
+    --timelineBadge-bgColor: var(--ctp-mantle);
+    --sideNav-bgColor-selected: var(--ctp-surface0);
+
+    /* Overlays */
+    --overlay-bgColor: var(--ctp-mantle);
+    --overlay-borderColor: var(--ctp-surface1);
+    --overlay-backdrop-bgColor: rgba(24, 25, 38, 0.8);
+
+    --menu-bgColor-active: var(--ctp-surface0);
+    --selectMenu-bgColor-active: var(--ctp-surface0);
+    --reactionButton-selected-bgColor-rest: color-mix(in srgb, var(--ctp-rosewater), transparent 80%);
+    --reactionButton-selected-bgColor-hover: color-mix(in srgb, var(--ctp-rosewater), transparent 70%);
+
+    /* Tooltip */
+    --tooltip-bgColor: var(--ctp-overlay0);
+    --tooltip-fgColor: var(--ctp-base);
+}
+
+:root,
+[data-color-mode="dark"][data-dark-theme*="dark"],
+[data-color-mode="auto"][data-dark-theme*="dark"] {
+    /* Foreground / Text */
+    --fgColor-default: var(--ctp-text);
+    --fgColor-muted: var(--ctp-subtext0);
+    --fgColor-neutral: var(--ctp-subtext0);
+    --fgColor-black: var(--ctp-crust);
+    --fgColor-white: var(--ctp-text);
+
+    --fgColor-accent: var(--ctp-rosewater);
+    --fgColor-link: var(--ctp-rosewater);
+
+    --fgColor-success: var(--ctp-green);
+    --fgColor-danger: var(--ctp-red);
+    --fgColor-attention: var(--ctp-yellow);
+    --fgColor-severe: var(--ctp-peach);
+    --fgColor-done: var(--ctp-mauve);
+    --fgColor-sponsors: var(--ctp-pink);
+    --fgColor-closed: var(--fgColor-danger);
+    --fgColor-open: var(--fgColor-success);
+    --fgColor-upsell: var(--fgColor-done);
+
+    --fgColor-disabled: var(--ctp-overlay0);
+    --fgColor-onEmphasis: var(--ctp-base);
+    --fgColor-onInverse: var(--ctp-base);
+
+    /* Selection */
+    --selection-bgColor: color-mix(in srgb, var(--ctp-rosewater), transparent 70%);
+    --highlight-neutral-bgColor: var(--ctp-surface1);
+    --codeMirror-selection-bgColor: color-mix(in srgb, var(--ctp-rosewater), transparent 70%);
+
+    --focus-outlineColor: var(--ctp-rosewater);
+    --focus-outline: 2px solid var(--ctp-rosewater);
+}
+
+:root,
+[data-color-mode="dark"][data-dark-theme*="dark"],
+[data-color-mode="auto"][data-dark-theme*="dark"] {
+    /* Borders */
+    --borderColor-default: var(--ctp-surface0);
+    --borderColor-muted: var(--ctp-surface0);
+    --borderColor-emphasis: var(--ctp-overlay0);
+
+    --borderColor-accent-emphasis: var(--ctp-rosewater);
+    --borderColor-accent-muted: color-mix(in srgb, var(--ctp-rosewater), transparent 60%);
+
+    --borderColor-success-emphasis: var(--ctp-green);
+    --borderColor-success-muted: color-mix(in srgb, var(--ctp-green), transparent 60%);
+
+    --borderColor-danger-emphasis: var(--ctp-red);
+    --borderColor-danger-muted: color-mix(in srgb, var(--ctp-red), transparent 60%);
+
+    --borderColor-attention-emphasis: var(--ctp-yellow);
+    --borderColor-attention-muted: color-mix(in srgb, var(--ctp-yellow), transparent 60%);
+
+    --borderColor-neutral-emphasis: var(--ctp-overlay0);
+    --borderColor-neutral-muted: var(--borderColor-muted);
+
+    --borderColor-severe-emphasis: var(--ctp-peach);
+    --borderColor-severe-muted: color-mix(in srgb, var(--ctp-peach), transparent 60%);
+
+    --borderColor-sponsors-emphasis: var(--ctp-pink);
+    --borderColor-sponsors-muted: color-mix(in srgb, var(--ctp-pink), transparent 60%);
+
+    --borderColor-closed-emphasis: var(--borderColor-danger-emphasis);
+    --borderColor-closed-muted: var(--borderColor-danger-muted);
+
+    --borderColor-open-emphasis: var(--borderColor-success-emphasis);
+    --borderColor-open-muted: var(--borderColor-success-muted);
+
+    --borderColor-upsell-emphasis: var(--borderColor-done-emphasis);
+    --borderColor-upsell-muted: var(--borderColor-done-muted);
+
+    --borderColor-translucent: var(--ctp-surface0);
+    --borderColor-disabled: var(--ctp-surface0);
+    --borderColor-transparent: #0000;
+
+    --border-default: 1px solid var(--borderColor-default);
+    --border-muted: 1px solid var(--borderColor-muted);
+    --border-emphasis: 1px solid var(--borderColor-emphasis);
+
+    --overlay-borderColor: var(--ctp-surface1);
+    --avatar-borderColor: var(--borderColor-translucent);
+}
+
+:root,
+[data-color-mode="dark"][data-dark-theme*="dark"],
+[data-color-mode="auto"][data-dark-theme*="dark"] {
+    /* Code & Diffs */
+    --codeMirror-bgColor: var(--ctp-base);
+    --codeMirror-lines-bgColor: var(--ctp-base);
+    --codeMirror-gutters-bgColor: var(--ctp-base);
+    --codeMirror-activeline-bgColor: var(--ctp-surface0);
+    --codeMirror-gutterMarker-fgColor-default: var(--ctp-base);
+    --codeMirror-lineNumber-fgColor: var(--fgColor-muted);
+
+    --diffBlob-additionLine-bgColor: color-mix(in srgb, var(--ctp-green), transparent 85%);
+    --diffBlob-additionLine-fgColor: var(--fgColor-default);
+    --diffBlob-additionNum-bgColor: color-mix(in srgb, var(--ctp-green), transparent 70%);
+    --diffBlob-additionNum-fgColor: var(--fgColor-default);
+    --diffBlob-additionWord-bgColor: color-mix(in srgb, var(--ctp-green), transparent 70%);
+
+    --diffBlob-deletionLine-bgColor: color-mix(in srgb, var(--ctp-red), transparent 85%);
+    --diffBlob-deletionLine-fgColor: var(--fgColor-default);
+    --diffBlob-deletionNum-bgColor: color-mix(in srgb, var(--ctp-red), transparent 70%);
+    --diffBlob-deletionNum-fgColor: var(--fgColor-default);
+    --diffBlob-deletionWord-bgColor: color-mix(in srgb, var(--ctp-red), transparent 70%);
+
+    --diffBlob-emptyLine-bgColor: var(--bgColor-muted);
+    --diffBlob-emptyNum-bgColor: var(--bgColor-muted);
+
+    --diffBlob-hunkLine-bgColor: var(--ctp-surface0);
+    --diffBlob-hunkLine-fgColor: var(--fgColor-muted);
+    --diffBlob-hunkNum-bgColor-hover: var(--ctp-surface1);
+    --diffBlob-hunkNum-fgColor-hover: var(--fgColor-onEmphasis);
+    --diffBlob-hunkNum-fgColor-rest: var(--fgColor-default);
+}
+
+:root,
+[data-color-mode="dark"][data-dark-theme*="dark"],
+[data-color-mode="auto"][data-dark-theme*="dark"] {
+    /* Button overrides */
+    --button-default-bgColor-rest: var(--ctp-surface0);
+    --button-default-bgColor-hover: var(--ctp-surface1);
+    --button-default-bgColor-active: var(--ctp-surface2);
+    --button-default-bgColor-selected: var(--ctp-surface2);
+    --button-default-fgColor-rest: var(--ctp-text);
+    --button-default-borderColor-rest: var(--borderColor-default);
+    --button-default-borderColor-hover: var(--borderColor-emphasis);
+    --button-default-borderColor-active: var(--borderColor-emphasis);
+}
+
+:root,
+[data-color-mode="dark"][data-dark-theme*="dark"],
+[data-color-mode="auto"][data-dark-theme*="dark"] {
+    /* Fix Primary Button Hover to match theme */
+    --button-primary-bgColor-rest: var(--bgColor-success-emphasis);
+    --button-primary-bgColor-hover: color-mix(in srgb, var(--bgColor-success-emphasis), black 7%);
+    --button-primary-bgColor-active: color-mix(in srgb, var(--bgColor-success-emphasis), black 14%);
+    --button-primary-bgColor-disabled: color-mix(in srgb, var(--bgColor-success-emphasis), white 40%);
+    --button-primary-borderColor-rest: var(--bgColor-success-emphasis);
+    --button-primary-borderColor-hover: var(--button-primary-bgColor-hover);
+    --button-primary-borderColor-active: var(--button-primary-bgColor-active);
+}
+
+:root,
+[data-color-mode="dark"][data-dark-theme*="dark"],
+[data-color-mode="auto"][data-dark-theme*="dark"] {
+    /* Fix Blue Accents (Year selector, Banners) */
+    --bgColor-accent-emphasis: var(--fgColor-accent);
+    --bgColor-accent-muted: var(--menu-bgColor-active);
+
+    /* Fix Grey Hovers */
+    --control-transparent-bgColor-hover: var(--menu-bgColor-active);
+    --control-transparent-bgColor-active: var(--menu-bgColor-active);
+
+    /* Fix Grey Selected State */
+    --control-transparent-bgColor-selected: var(--menu-bgColor-active);
+}
