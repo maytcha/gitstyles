@@ -267,3 +267,83 @@
     /* Fix Grey Selected State */
     --control-transparent-bgColor-selected: var(--menu-bgColor-active);
 }
+
+:root,
+[data-color-mode="dark"][data-dark-theme*="dark"],
+[data-color-mode="auto"][data-dark-theme*="dark"] {
+    /* Contribution Graph (Rose/Pink) */
+    --contribution-default-bgColor-0: var(--ctp-surface0);
+    --contribution-default-bgColor-1: color-mix(in srgb, var(--ctp-pink), transparent 80%);
+    --contribution-default-bgColor-2: color-mix(in srgb, var(--ctp-pink), transparent 60%);
+    --contribution-default-bgColor-3: color-mix(in srgb, var(--ctp-pink), transparent 40%);
+    --contribution-default-bgColor-4: var(--ctp-pink);
+
+    --contribution-default-borderColor-0: var(--ctp-base);
+    --contribution-default-borderColor-1: var(--ctp-base);
+    --contribution-default-borderColor-2: var(--ctp-base);
+    --contribution-default-borderColor-3: var(--ctp-base);
+    --contribution-default-borderColor-4: var(--ctp-base);
+}
+
+:root,
+[data-color-mode="dark"][data-dark-theme*="dark"],
+[data-color-mode="auto"][data-dark-theme*="dark"] {
+    /* Generic gray-ish label (for neutral tags) */
+    --label-gray-bgColor-rest: var(--ctp-surface1);
+    --label-gray-bgColor-hover: var(--ctp-surface2);
+    --label-gray-bgColor-active: var(--ctp-overlay0);
+    --label-gray-fgColor-rest: var(--ctp-text);
+    --label-gray-fgColor-hover: var(--ctp-text);
+    --label-gray-fgColor-active: var(--ctp-text);
+    --label-gray-borderColor: #0000;
+
+    /* Green label (success / “good”) */
+    --label-green-bgColor-rest: color-mix(in srgb, var(--ctp-green), transparent 80%);
+    --label-green-bgColor-hover: color-mix(in srgb, var(--ctp-green), transparent 70%);
+    --label-green-bgColor-active: color-mix(in srgb, var(--ctp-green), transparent 60%);
+    --label-green-fgColor-rest: var(--ctp-green);
+    --label-green-fgColor-hover: var(--ctp-green);
+    --label-green-fgColor-active: var(--ctp-green);
+    --label-green-borderColor: #0000;
+
+    /* Red label (danger) */
+    --label-red-bgColor-rest: color-mix(in srgb, var(--ctp-red), transparent 80%);
+    --label-red-bgColor-hover: color-mix(in srgb, var(--ctp-red), transparent 70%);
+    --label-red-bgColor-active: color-mix(in srgb, var(--ctp-red), transparent 60%);
+    --label-red-fgColor-rest: var(--ctp-red);
+    --label-red-fgColor-hover: var(--ctp-red);
+    --label-red-fgColor-active: var(--ctp-red);
+    --label-red-borderColor: #0000;
+
+    /* Attention (warn) */
+    --label-yellow-bgColor-rest: color-mix(in srgb, var(--ctp-yellow), transparent 80%);
+    --label-yellow-bgColor-hover: color-mix(in srgb, var(--ctp-yellow), transparent 70%);
+    --label-yellow-bgColor-active: color-mix(in srgb, var(--ctp-yellow), transparent 60%);
+    --label-yellow-fgColor-rest: var(--ctp-yellow);
+    --label-yellow-fgColor-hover: var(--ctp-yellow);
+    --label-yellow-fgColor-active: var(--ctp-yellow);
+    --label-yellow-borderColor: #0000;
+
+    /* Done (purple-ish) */
+    --label-purple-bgColor-rest: color-mix(in srgb, var(--ctp-mauve), transparent 80%);
+    --label-purple-bgColor-hover: color-mix(in srgb, var(--ctp-mauve), transparent 70%);
+    --label-purple-bgColor-active: color-mix(in srgb, var(--ctp-mauve), transparent 60%);
+    --label-purple-fgColor-rest: var(--ctp-mauve);
+    --label-purple-fgColor-hover: var(--ctp-mauve);
+    --label-purple-fgColor-active: var(--ctp-mauve);
+    --label-purple-borderColor: #0000;
+
+    /* Progress Bars (Activity Overview) */
+    --progressBar-bgColor-success: var(--ctp-pink);
+    --progressBar-bgColor-attention: var(--ctp-yellow);
+    --progressBar-bgColor-danger: var(--ctp-red);
+    --progressBar-bgColor-done: var(--ctp-mauve);
+
+    /* Legacy Contribution Graph (Just in case) */
+    --color-calendar-graph-day-bg: var(--contribution-default-bgColor-0);
+    --color-calendar-graph-day-border: rgba(27, 31, 35, 0.06);
+    --color-calendar-graph-day-L1-bg: var(--contribution-default-bgColor-1);
+    --color-calendar-graph-day-L2-bg: var(--contribution-default-bgColor-2);
+    --color-calendar-graph-day-L3-bg: var(--contribution-default-bgColor-3);
+    --color-calendar-graph-day-L4-bg: var(--contribution-default-bgColor-4);
+}
