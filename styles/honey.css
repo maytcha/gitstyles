@@ -293,3 +293,15 @@
     --button-primary-borderColor-hover: var(--button-primary-bgColor-hover);
     --button-primary-borderColor-active: var(--button-primary-bgColor-active);
 }
+
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    /* Fix Blue Accents (Year selector, Banners) */
+    --bgColor-accent-emphasis: var(--fgColor-accent);
+    --bgColor-accent-muted: var(--menu-bgColor-active);
+    
+    /* Fix Grey Hovers */
+    --control-transparent-bgColor-hover: var(--menu-bgColor-active);
+    --control-transparent-bgColor-active: var(--menu-bgColor-active);
+}
