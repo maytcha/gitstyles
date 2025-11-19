@@ -280,3 +280,16 @@
     --button-default-borderColor-hover: var(--borderColor-default);
     --button-default-borderColor-active: var(--borderColor-default);
 }
+
+:root,
+[data-color-mode="light"][data-light-theme="light"],
+[data-color-mode="auto"][data-light-theme="light"] {
+    /* Fix Primary Button Hover to match theme */
+    --button-primary-bgColor-rest: var(--bgColor-success-emphasis);
+    --button-primary-bgColor-hover: color-mix(in srgb, var(--bgColor-success-emphasis), black 7%);
+    --button-primary-bgColor-active: color-mix(in srgb, var(--bgColor-success-emphasis), black 14%);
+    --button-primary-bgColor-disabled: color-mix(in srgb, var(--bgColor-success-emphasis), white 40%);
+    --button-primary-borderColor-rest: var(--bgColor-success-emphasis);
+    --button-primary-borderColor-hover: var(--button-primary-bgColor-hover);
+    --button-primary-borderColor-active: var(--button-primary-bgColor-active);
+}
